@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRANGEIRO OU NÃO</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Eu sou do(a) <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar() {
+            var txt = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var texto = txt.value
+            res.innerHTML = `<p>Você é do<strong>${texto}</strong>!</p>`
+            if  (texto == 'Brasil') {
+                res.innerHTML += `<p>Então você é <strong>Brasileiro(a)</strong>!</p>`
+            }  else {
+                res.innerHTML += `<p>Então você é <strong>Estrangeiro(a)</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section id="section">
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="AnoNasc" id="AnoNasc">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="Sexo" id="Masculino" value="Homem">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="Sexo" id="Feminino" value="Mulher">
+                <label for="Feminino">Feminino</label> 
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="msg">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        <div id="foto">
+            <img id="imagem" src="">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Letícia Pignatari</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(94, 163, 165);
+            color: white; /* Cometário em CSS */
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p> <!-- Comentário em HTML -->
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')); // mesmo digitando um número o comando prompt me retorna uma string
+        var n2 = Number(window.prompt('Digite outro número: ')); // fazemos a conversão para um number usando o comando parseInt
+        var soma = n1 + n2;
+        window.alert(`A soma dos números ${n1} e ${n2} é de ${soma}`);
+        // number + number para adição
+        // string + string para concatenação
+    </script>
+</body>
+</html> 
